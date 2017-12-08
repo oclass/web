@@ -1,0 +1,190 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:Microsoft Yahei;
+}
+
+body{
+	background:#bdbdbd;
+}
+
+nav{
+	background:#363636;
+	position:relative;
+	width:100%;
+	height:60px;
+	overflow:hidden;
+}
+
+nav h1{
+	position:absolute;
+	height:60px;
+	line-height:60px;
+	left:20px;
+	top:0px;
+	color:white;
+}
+
+nav ul{
+	position:absolute;
+	height:60px;
+	line-height:60px;
+	right:20px;
+	top:0;
+}
+
+nav ul li{
+	float:left;
+	margin-left:30px;
+}
+
+nav ul li a,nav ul li{
+	color:white;
+}
+
+div{
+	box-shadow:1px 1px 5px #363636;
+	background:white;
+	padding:30px 20px;
+	margin:20px;
+}
+
+div h2,h3{
+	line-height:60px;
+	height:60px;
+}
+
+p{
+	text-indent:2em;
+	font-size:14px;
+}
+
+.author{
+	color:#babdb6;
+	line-height:30px;
+	height:30px;
+	text-indent:none;
+}
+
+.sdiv{
+	text-align:center;
+	box-shadow:none;
+	padding:0;
+	margin:10px;
+}
+
+.sdiv img{
+	width:200px;
+}
+
+.listone li{
+	list-style:none;
+}
+
+.listtwo li{
+	list-style:square;
+	margin-left:20px;
+}
+
+.pic{
+	postion:absolute;
+	box-shadow:0 0 1px #000;
+	padding:10px 10px 20px;
+	margin:20px 20px;
+	width:20%;
+}
+
+.pic p{
+	text-align:center;
+	text-indent:0;
+	color:blue;
+}
+
+.pic img{
+	width:100%;
+	margin-top:10px;
+}
+
+.listthird{
+	margin-left:80px;
+}
+
+.form{
+	font-size:14px;
+	font-weight:bold;
+	height:40px;
+	line-height:40px;
+}
+
+.table{
+	border-collapse: collapse;
+	width: 100%;
+	margin: 0 auto;
+	border: none;
+}
+
+tr:nth-child(1) {
+	background: black;
+}
+
+th {
+	color: white;
+}
+
+tr:last-child {
+	border: solid #ccc 1px;
+	background: rgb(204, 204, 204);
+}
+
+h3>span{
+	color: gray;
+	font-weight: 500;
+	font-size: 40px;
+	margin: 0 10px;
+}
+
+h4{
+	text-indent:40px;
+}
+
+.submit{
+	text-align:center;
+	margin:30px 0 0;
+	line-height:40px;
+}
+
+.gray{
+	color:gray;
+	font-size:12px;
+}
+
+textarea{
+	vertical-align:top;
+	width:300px;
+	height:150px;
+	margin:0 0 20px;
+}
+
+.submit2{
+	width:100%;
+}
+
+.submit2>input{
+	height: 50px;
+	width: 100%;
+	background: #8eb9f5;
+	color: white;
+	border-radius: 10px;
+}
+
+footer{
+	background:#363636;
+	width:100%;
+	height:60px;
+}
+
+footer h5{
+	color:white;
+	text-align:center;
+	line-height:60px;
+}
