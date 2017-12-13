@@ -1,0 +1,28 @@
+div{
+	background: #ccc;
+	width: 400px;
+	height: 200px;
+	position: fixed;
+	top: calc(50% - 100px);
+	left: calc(50% - 200px);
+	overflow: hidden;
+}
+
+div p{
+	background: yellow;
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	margin: 0;
+	position: absolute;
+}
+
+.one{
+	top: -50px;
+	left: -50px;
+}
+
+.two{
+	bottom: -50px;
+	right: -50px;
+}
