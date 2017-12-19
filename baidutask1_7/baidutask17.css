@@ -1,0 +1,610 @@
+/*重置*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	font-family: "Mircosoft Yahei"
+}
+
+/*通用*/
+body {
+	min-width: 1280px;
+}
+
+.page {
+	width: 1280px;
+	margin: 0 auto;
+}
+
+.title-3 {
+	font-size: 21px;
+	color: #323333;
+}
+
+h3 {
+	letter-spacing: .2em;
+	color: #231815;
+}
+
+h4,
+.title-4 {
+	font-size: 14px;
+	color: #231815;
+}
+
+p {
+	font-size: 12px;
+	line-height: 2;
+	color: #aaa;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+	color: #231815;
+}
+
+button {
+	cursor: pointer;
+}
+
+ul {
+	list-style: none;
+}
+
+.line {
+	display: inline-block;
+	width: 30px;
+	height: 12px;
+	border-top: 2px solid #fff;
+}
+
+.more {
+	width: 168px;
+	height: 42px;
+	margin: 20px;
+	background: #fff;
+	color: #e9605e;
+	border: 1px solid #e9605e;
+}
+
+.more:hover {
+	background: #e9605e;
+	color: #fff;
+}
+
+/*导航栏*/
+.container-header {
+	height: 56px;
+}
+
+.logo {
+	float: left;
+	margin-left: 60px;
+	font-size: 21px;
+	line-height: 56px;
+}
+
+.logo > img {
+	width: 31px;
+	height: 31px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.header-loginbtn {
+	float: right;
+	margin-right: 60px;
+	line-height: 56px;
+	color: #e9605e;
+}
+
+.header-loginbtn > img {
+	width: 14px;
+	height: 18px; 
+	margin: 0 5px 0 20px;
+	vertical-align: middle;
+}
+
+.nav {
+	float: right;
+}
+
+.nav li {
+	float: left;
+	width: 100px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 52px;
+	cursor: pointer;
+}
+
+.nav li:hover {
+	border-bottom: 4px solid #e9605e;
+}
+
+.nav li:hover a {
+	color: #e9605e;	
+}
+
+/*banner*/
+.container-banner {
+	position: relative;
+	height: 690px;
+	background: url(image/banner.jpg);
+}
+
+.banner-wrap {
+	position: absolute;
+	width: 100%;
+	height: inherit;
+	background: #000;
+	opacity: .2;
+}
+
+.banner-detail {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 100px;
+}
+
+.container-banner h2 {
+	font-size: 60px;
+	font-weight: 100;
+	color: #fff;
+}
+
+.container-banner .title-3 {
+	color: #fff;
+}
+
+.begin {
+	width: 330px;
+	height: 64px;
+	margin-top: 50px;
+	font-size: 30px;
+	background: #e9605e;
+	color: #fff;
+}
+
+.begin:hover {
+	color: #e9605e;
+	background: #fff;
+}
+
+/*container-3*/
+.container-3 {
+	height: 70px;
+	padding: 120px 50px 60px 50px;
+}
+
+.container-3 li {
+	position: relative;   
+	float: left;
+	width: 160px;
+	height: 60px;
+	padding: 0 65px;
+	border-left: 1px solid grey;
+	text-align: center; 
+}
+
+.container-3 li > img {
+	position: absolute;  /*父容器要position: relative;否则浏览器兼容会出现bug*/
+	top: -65px;
+	margin-left: -21px;
+}
+
+.container-3 li:first-child {
+	border-left: none;
+}
+
+/*container-4*/
+.container-4 {
+	height: 200px;
+	padding: 70px 216px;
+	text-align: center;
+	background: #ededec;
+	color: #a1a1a1;
+}
+
+.container-4 > h2 {
+	font-size: 54px;
+	font-weight: 100;
+	line-height: 2.5;
+}
+
+/*container-5*/
+.container-5 {
+	position: relative;
+	height: 340px;
+	background: url(image/pic-1.jpg);
+}
+
+.container-5-wrap {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #aa3433;
+	opacity: .2;
+}
+
+.container-5-detail {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	padding: 50px;
+	text-align: center;
+}
+
+.container-5-detail .title-3 {
+	color: #fff;
+	line-height: 1.4;
+}
+
+.container-5-detail p {
+	color: #fff;
+}
+
+.select {
+	padding: 0 108px;
+}
+
+.select li {
+	float: left;
+	margin: 50px 15px;
+}
+
+.select li select {
+	width: 236px;
+	height: 36px;
+	color: #a8aaaa;
+}
+
+li select option {
+	background: #ededec;
+}
+
+.search {
+	width: 236px;
+	height: 36px;
+	padding-left: 34px; 
+	letter-spacing: 2em;
+	background: #e9605e;
+	color: #fff;
+}
+
+.search:hover {
+	color: #e9605e;
+	background: #fff;
+}
+
+/*container-5*/
+.container-6 {
+	position: relative;
+	padding: 100px 148px;
+	height: 410px;
+	background: #f7f7f7;
+}
+
+.container-6 > div {
+	float: left;
+	width: 216px;
+	margin-left: 40px; 
+	text-align: center;
+}
+
+.container-6 > div:first-child {
+	margin-left: 0;
+}
+
+.container-6 > div img {
+	padding: 14px 5px;
+	border: 1px solid #ededec;
+	margin-bottom: 10px;
+}
+
+div.reverse > img {
+	margin: 8px 0 0;
+}
+
+div.reverse .title-4 {
+	font-size: 18px;
+	letter-spacing: 2em;
+	margin-right: -36px;
+}
+
+/*container-7*/
+.container-7 {
+	height: 567px;
+}
+.container-7 > div {
+	float: left;
+	height: inherit;
+}
+
+div.seven-left {
+	position: relative;
+	width: 849px;
+	background: url(image/pic-2.jpg);
+	overflow: hidden;
+}
+
+.triangle {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	margin-top: -18px;
+	border-top: 18px solid transparent;
+	border-bottom: 18px solid transparent;
+	border-right: 30px solid #fff;
+}
+
+.seven-left-detail {
+	padding: 130px 240px;
+	text-align: center;
+	color: #fff;
+}
+
+.seven-left-detail > h3 {
+	font-size: 50px;
+	font-weight: 100;
+	color: #fff;
+}
+
+.seven-left-detail > h2 {
+	margin-bottom: 30px;
+	font-size: 158px;
+	line-height: .8;
+	font-weight: 400;
+}
+
+.seven-left-detail > p {
+	color: #fff;
+}
+
+div.seven-right {
+	width: 291px;
+	height: 307px;
+	padding: 130px 70px;
+	text-align: center;
+}
+
+.seven-right > h3 span {
+	color: #e9605e;
+}
+
+.seven-right > p {
+	margin: 20px 0;
+	text-align: left;
+}
+
+.small {
+	width: 104px;
+	height: 30px;
+}
+
+.point {
+	margin-left: 106px
+}
+
+.point > li {
+	float: left;
+	width: 11px;
+	height: 12px;
+	margin-left: 12px;
+	background: url(image/point.png);
+	cursor: pointer;
+}
+
+.point > li:hover {
+	background: url(image/point-active.png);
+}
+
+.point .active {
+	background: url(image/point-active.png);
+}
+
+/*container-8*/
+.container-8 {
+	width: 100%;
+	height: 521px;
+	overflow: hidden;
+}
+
+.container-8 > div {
+	float: left;
+	width: 424px;
+	height: 371px;
+	padding-top: 150px;
+	text-align: center;
+}
+
+div.eight-left {
+	background: #e9605e;
+}
+
+.eight-left p.title-3 {
+	color: #fff;
+}
+
+.eight-left .more{
+	background: #e9605e;
+	color: #fff;
+	border-color: #fff;
+}
+
+.eight-left .more:hover {
+	background: #fff;
+	color: #e9605e;
+}
+
+div.eight-middle p {
+	color: #231815;
+}
+
+.eight-middle .line {
+	border-color: #231815;
+}
+
+div.eight-right {
+	width: 431px;
+	height: inherit;
+	padding-top: 0; 
+}
+
+/*container-9*/
+.container-9 {
+	width: inherit;
+	height: 750px;
+}
+
+.nine-top {
+	height: 200px;
+	text-align: center;
+	padding-top: 120px;
+}
+
+.nine-top .title {
+	color: #231815;
+}
+
+.nine-top .line {
+	border-color: #e9605e;
+}
+
+.nine-bottom {
+	width: 1000px;
+	height: 265px;
+	padding: 0 140px;
+}
+
+.form-left {
+	float: left;
+	width: 286px;
+}
+
+.form-left > h4 {
+	margin: 30px 0;
+}
+
+.form-left > h4:first-child {
+	margin-top: 0;
+}
+
+.form-left > h4:nth-child(7) {
+	margin-bottom: 0;
+}
+
+.form-left > a {
+	float: right;
+	font-size: 12px;
+	color: #aaa;
+}
+
+.form {
+	float: right;
+	width: 640px;
+	padding-left: 74px;
+}
+
+.form > input {
+	width: 290px;
+	height: 40px;
+	margin: 5px 5px 5px 0;
+	padding-left: 20px;
+	background: #ededef;
+}
+
+.form > textarea {
+	width: 610px;
+	height: 110px;
+    margin: 8px 5px 5px 0;
+	padding: 10px 0 0 20px;
+	background: #ededef;
+}
+
+.form > button {
+	width: 630px;
+	height: 40px;
+	margin: 10px 5px 5px 0;
+	padding-left: 20px;
+	color: #323333;
+	background: #ededef;
+}
+
+.form > button:hover {
+	color: #fff;
+	background: #aaa;
+}
+
+/*container-10*/
+.container-10 {
+	height: 360px;
+	text-align: center;
+	background: #32353e;
+}
+
+.container-10 .title-3 {
+	padding-top: 80px;
+	color: #fff;
+}
+
+.container-10 > p {
+	color: #fff;
+}
+
+.postmail {
+	height: 40px;
+	margin-top: 30px;
+}
+
+.postmail input {
+	width: 430px;
+	height: inherit;
+	padding-left: 20px;
+}
+
+.postmail button {
+	width: 80px;
+	height: inherit;
+	margin-left:-8px;
+}
+
+.postmail > button:hover {
+	color: #fff;
+	background: #aaa;
+}
+
+.share {
+	padding: 20px 500px;
+}
+
+.share li {
+	float: left;
+	width: 24px;
+	height: 25px;
+	margin-left: 30px;
+}
+
+/*container-footer*/
+.container-footer {
+	height: 53px;
+	background: #2f2f38;
+}
+
+.container-footer > p {
+	display: inline-block;
+	line-height: 53px;
+	padding-left: 80px;
+	color: #fff;
+}
+
+.container-footer > a {
+	float: right;
+	margin-right: 80px;
+	font-size: 12px;
+	line-height: 53px;
+	color: #fff;
+}
