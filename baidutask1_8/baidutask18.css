@@ -25,9 +25,7 @@
     /*min-height: 1px; height需要拥有高度*/
     width: 8.33%;
     /*gutter间隔*/
-    padding: 6px;
-    /*task没作要求*/
-    /*一个测试*/
+    padding: 6px;    /*task没作要求*/ /*一个测试*/
     margin: 10px;
     background-color: #eee;
     outline: 1px solid #999;
