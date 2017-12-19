@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.grid-container {
+    width: 100%;
+    padding: 10px;
+    outline: 1px solid #999;
+    /*border会占据空间，outline不会，但声明box-sizing: border-box; 后border也不占据空间*，然后声明了 ！DOCTYPE 后ie8+才支持outline*/
+}
+
+.row::before,
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+[class*="col-"] {
+    float: left;
+    height: 50px;
+    /*min-height: 1px; height需要拥有高度*/
+    width: 8.33%;
+    /*gutter间隔*/
+    padding: 6px;
+    /*task没作要求*/
+    /*一个测试*/
+    margin: 10px;
+    background-color: #eee;
+    outline: 1px solid #999;
+}
+
+@media only screen and (min-width: 768px) {
+    .col-md-1 {
+        width: calc(8.33% - 20px);
+    }
+    .col-md-2 {
+        width: calc(16.66% - 20px);
+    }
+    .col-md-3 {
+        width: calc(25% - 20px);
+    }
+    .col-md-4 {
+        width: calc(33.33% - 20px);
+    }
+    .col-md-5 {
+        width: calc(41.66% - 20px);
+    }
+    .col-md-6 {
+        width: calc(50% - 20px);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+	.col-xs-2 {
+		width: calc(16.66% - 20px);
+	}
+	.col-xs-3 {
+		width: calc(25% - 20px);
+	}
+    .col-xs-6 {
+        width: calc(50% - 20px);
+    }
+    .col-xs-8 {
+    	width: calc(66.66% - 20px);
+    }
+    .col-xs-12 {
+    	width: calc(100% - 20px);
+    }
+}
