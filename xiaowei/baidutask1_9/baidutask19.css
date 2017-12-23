@@ -67,6 +67,11 @@ button {
 	cursor: pointer;
 }
 
+button:hover {
+	color: #fff;
+	background-color: #cf4a36;
+}
+
 /*header*/
 #header {
 	height: 56px;
