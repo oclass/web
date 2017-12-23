@@ -1,0 +1,186 @@
+/*reset*/
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "Microsoft YaHei";
+	box-sizing: border-box;
+}
+
+/*general*/
+html,
+body {
+	min-width: 1280px;
+}
+
+a {
+	font-size: 12px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a:hover {
+	color: #aaa;
+}
+
+img {
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+ul {
+	list-style: none;
+}
+
+.item-title {
+	font-size: 12px;
+	color: #aaa;
+}
+
+.active,
+#aside .active {
+	color: #fff;
+}
+
+/*header*/
+#header {
+	height: 56px;
+	padding: 0 50px;
+	background: #2189bf;
+}
+
+.logo {
+	float: left;
+	height: inherit;
+	line-height: 56px;
+}
+
+.login {
+	float: right;
+	height: inherit;
+	line-height: 56px;
+	color: #fff;
+}
+
+.search {
+	position: relative;
+	float: right;
+	height: inherit;
+	line-height: 52px;
+}
+
+.search > a {
+	position: absolute;
+	margin-left: 16px;
+}
+
+.search > input {
+	width: 314px;
+	height: 30px;
+	padding-left: 40px; 
+	margin-right: 20px;
+	border-radius: 20px;
+	background: #fff;
+}
+
+/*aside*/
+#aside {
+	float: left;
+	width: 260px;
+	height: 1200px;
+	background: #2a2e3d;
+}
+
+[id="aside"] a {
+	color: #576477;
+}
+
+[id="aside"] a:hover {
+	color: #fff;
+}
+
+/*user*/
+.user {
+	height: 150px;
+}
+
+.profile {
+	height: 86px;
+	padding: 20px 30px;
+}
+
+.profile > a {
+	font-size: 16px;
+	color: #fff;
+	margin-left: 8px;
+}
+
+.profile > a:hover {
+	color: #aaa;
+}
+
+.user-detail {
+	padding: 10px 30px;
+}
+
+.user-detail > a {
+	display: inline-block;
+	padding: 0 30px;
+}
+
+.user-detail > a:first-child {
+	border-right: 1px solid #576477;
+}
+
+/*per-table*/
+.doc-list {
+	display: none;
+}
+
+.list-check input:checked ~ ul {
+	display: block;
+}
+
+.list-check input {
+	display: none;
+}
+
+.per-table > li {
+    padding-left: 50px;
+	min-height: 50px;
+}
+
+.per-table li:hover {
+	background-color: #383d4e; 
+}
+
+.per-table img {
+	margin-right: 10px;
+}
+
+.list-check {
+	padding: 10px 0;
+	background: #383d4e;
+}
+
+.list-check li {
+	padding-left: 30px;
+	margin: 6px 0;
+}
+
+.doc {
+	padding-left: 2em;
+	background: url(images/doc-2.png) no-repeat left center;
+}
+
+.doc:hover {
+	background-image: url(images/doc-3.png);
+}
+
+.doc-d {
+	padding-left: 2em;
+	background: url(images/doc-5.png) no-repeat left center;
+}
+
+.doc-d:hover {
+	background-image: url(images/doc-4.png); 
+}

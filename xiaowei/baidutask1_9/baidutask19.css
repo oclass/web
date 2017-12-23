@@ -1,0 +1,746 @@
+/*reset*/
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "Microsoft YaHei";
+	font-size: 12px;
+	box-sizing: border-box;
+}
+
+/*general*/
+html,
+body {
+	min-width: 1280px;
+	background: #eeeeed;
+}
+
+a {
+	font-size: 12px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a:hover {
+	color: #aaa;
+}
+
+img {
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+ul {
+	list-style: none;
+}
+
+select {
+	min-width: 58px;
+	padding-left: 5px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: url(images/arrow-d.png) no-repeat 90% center;
+}
+
+.item-title {
+	height: 40px;
+	line-height: 40px;
+	padding-left: 20px;
+	font-size: 12px;
+	color: #aaa;
+	background: #f4f5f6;
+}
+
+.active,
+#aside .active {
+	color: #fff;
+}
+
+button {
+	width: 50px;
+	height: 28px;
+	border: none;
+	border-radius: 2px;
+	color: #fff;
+	background: #2189bf;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+/*header*/
+#header {
+	height: 56px;
+	padding: 0 50px;
+	background: #2189bf;
+}
+
+.logo {
+	float: left;
+	height: inherit;
+	line-height: 56px;
+}
+
+.login {
+	float: right;
+	height: inherit;
+	line-height: 56px;
+	color: #fff;
+}
+
+.search {
+	position: relative;
+	float: right;
+	height: inherit;
+	line-height: 52px;
+}
+
+.search > a {
+	position: absolute;
+	margin-left: 16px;
+}
+
+.search > input {
+	width: 314px;
+	height: 30px;
+	padding-left: 40px; 
+	margin-right: 20px;
+	border: 0;
+	border-radius: 20px;
+	background: #fff;
+}
+
+/*aside*/
+#aside {
+	float: left;
+	width: 260px;
+	height: 1200px;
+	background: #2a2e3d;
+}
+
+[id="aside"] a {
+	color: #576477;
+}
+
+[id="aside"] a:hover {
+	color: #fff;
+}
+
+/*user*/
+.user {
+	height: 150px;
+}
+
+.profile {
+	height: 86px;
+	padding: 20px 30px;
+}
+
+.profile > a {
+	font-size: 16px;
+	color: #fff;
+	margin-left: 8px;
+}
+
+.profile > a:hover {
+	color: #aaa;
+}
+
+.user-detail {
+	padding: 10px 30px;
+}
+
+.user-detail > a {
+	display: inline-block;
+	padding: 0 30px;
+}
+
+.user-detail > a:first-child {
+	border-right: 1px solid #576477;
+}
+
+/*per-table*/
+[class*="list-wrap-"] {
+	max-height: 0;
+	overflow: hidden;
+}
+
+[class*="list-check-"]:hover > [class*="list-wrap-"] {
+	max-height: 300px;
+}
+
+.per-table > li {
+	min-height: 50px;
+	padding: 15px 46px;
+}
+
+.per-table li:hover {
+	background-color: #383d4e; 
+}
+
+.per-table img {
+	margin-right: 10px;
+}
+
+.list-check-1 {
+	padding: 10px 0;
+	background: #383d4e;
+}
+
+.list-check-1 li {
+	padding-left: 30px;
+	margin: 6px 0;
+}
+
+.doc {
+	padding-left: 2em;
+	background: url(images/doc-2.png) no-repeat left center;
+}
+
+.doc:hover {
+	background-image: url(images/doc-3.png);
+}
+
+.doc-d {
+	padding-left: 2em;
+	background: url(images/doc-5.png) no-repeat left center;
+}
+
+.doc-d:hover {
+	background-image: url(images/doc-4.png); 
+}
+
+/*main*/
+#main {
+	position: relative;
+	float: right;
+	width: calc(100% - 260px);
+}
+
+.main-doc {
+	height: 30px;
+	line-height: 30px;
+	padding-left: 30px;
+	background: #fff;
+}
+
+.main-detail {
+	position: absolute;
+	left: calc(50% - 445px);
+	width: 890px;
+}
+
+.main-detail > div {
+	margin: 14px 0;
+}
+
+/*表单查询*/
+.search-form {
+	height: 90px;
+	padding: 0 30px;
+	background: #fff;
+	border: 1px solid #aaa;
+}
+
+.search-form > form {
+	height: inherit;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.search-form form > div {
+	float: left;
+	height: 60px;
+	margin-right: 36px;
+	line-height: 2.5;
+	text-align: justify;
+}
+
+form > div label {
+	margin-right: 10px;
+	color: #aaa;
+}
+
+.query-item {
+	width: 120px;
+}
+
+.buy-sell {
+	width: 190px;
+    background: url(images/change.png) no-repeat right center;	
+}
+
+.buy-sell > select {
+	width: 120px;
+	height: 24px; 
+}
+
+.b-s-change {
+	float: right;
+	margin-top: -30px;
+	width: 25px;
+	height: inherit;
+}
+
+.others {
+	width: 290px;
+	margin-left: -10px;
+}
+
+.others > label {
+	margin-left: 10px;
+}
+
+.others > input,
+.others > select:not(.not) {
+	width: 120px;
+	height: 24px;
+}
+
+.not {
+	width: 50px;
+	height: 24px;
+}
+
+.query-search {
+	position: relative;
+}
+
+.query-search button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/*时间金额查询*/
+div.hour-money {
+	height: 64px;
+	background: none;
+	border: none;
+}
+
+.hour-money-list {
+	height: inherit;
+	width: 760px;
+	display: inline-block;
+}
+
+.hour-money-list > li {
+	float: left;
+	width: 110px;
+	height: inherit;
+	margin-right: 5px;
+	text-align: center;
+	border: 1px solid #aaa;
+	background: #fff;
+}
+
+.hour-money-list > li:hover:not([class*="list-"]) {
+	border-top: 3px solid #2189bf;
+}
+
+.hour-money-list [class*="list-"] {
+	width: 30px;
+	background: url(images/list-left.png) no-repeat center;
+	background-color: #fff; 
+}
+
+.hour-money-list .list-right {
+	background-image: url(images/list-right.png);
+}
+
+.hour-money-list > li p:not(:nth-child(2)) {
+	margin-top: 10px;
+}
+
+.hour-money-list > li span {
+	font-size: 21px;
+	color: #ec6500;
+}
+
+.h-m-history {
+	float: right;
+	width: 130px;
+	height: inherit;
+	text-align: center;
+	border: 1px solid #aaa;
+	background-color: #fff;
+}
+
+.h-m-history > a {
+	line-height: 64px;
+}
+
+/*月份成交量明细*/
+.months-volume {
+	height: 90px;
+}
+
+.months-v-detail {
+	height: 70px;
+	margin-top: 4px;
+}
+
+.months-v-detail > li {
+	position: relative;
+	float: left;
+	width: 200px; 
+	padding: 18px 16px;
+	background-color: #fff; 
+	border: 1px solid #aaa;
+}
+
+.months-v-detail > li:not(:last-child) {
+	margin-right: 30px;
+}
+
+.months-v-detail > li span {
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	width: 60px;
+	height: 46px;
+	background-color: #44b29e;
+}
+
+.months-v-detail > li {
+	border-left: 3px solid #44b29e;
+}
+
+.months-v-detail > li:nth-child(2) {
+	border-left-color: #388ac1;
+}
+
+.months-v-detail > li:nth-child(2) span {
+	background-color: #388ac1;
+}
+
+.months-v-detail > li:nth-child(3) {
+	border-left-color: #cf4a36;
+}
+
+.months-v-detail > li:nth-child(3) span {
+	background-color: #cf4a36;
+}
+
+.months-v-detail > li:last-child {
+	border-left-color: #e2cd46;
+}
+
+.months-v-detail > li:last-child span {
+	background-color: #e2cd46;
+}
+
+/*container-3*/
+.container-3 {
+	height: 350px;
+}
+
+.container-3 > div {
+	background-color: #fff;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+}
+
+
+/*购买材料明细*/
+.item-material {
+	float: left;
+	width: 530px;
+}
+
+.item-material-list {
+	height: 280px;
+	margin: 10px 16px 20px;
+}
+
+.item-material-list > li {
+	float: left;
+	position: relative;
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	margin-right: 5px; 
+	text-align: center;
+}
+
+.tab-radio {
+	position: absolute;
+	z-index: 99;  /*确保radio能被选到*/
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.item-material-list > li > span {
+    display: inline-block;
+    box-sizing: content-box;  /*border计算宽度*/
+    position: relative;
+    z-index: 1;  /*保证span比table更前面*/
+	height: 100%;
+	width: 100%;
+    background-color: #f4f5f6;
+}
+
+.item-material-list > li input:checked + span {
+	background-color: #fff;
+	border: 1px solid #aaa;
+	border-bottom-color: #fff; 
+}
+
+.table {
+	display: none;
+	position: absolute;
+	z-index: 0;
+	width: 490px;
+	height: 250px;
+	padding: 40px;
+	margin-top: -1px;
+	border: 1px solid #aaa;
+}
+
+.table-2 {
+	margin-left: -85px;
+}
+
+.table-3 {
+	margin-left: -170px;
+}
+
+.table-4 {
+	margin-left: -255px;
+}
+
+.table-5 {
+	margin-left: -340px;
+}
+
+.item-material-list > li input:checked ~ .table {
+	display: block;
+}
+
+.table table {
+	width: 400px;
+	height: 180px;
+	border-collapse: collapse;
+}
+
+.table table td {
+	border: 1px solid #aaa;
+	cursor: pointer;
+}
+
+.table table td:hover {
+	background-color: #aaa;
+	color: #fff;
+}
+
+/*项目summary*/
+.item-summary {
+	float: right;
+	width: 350px;
+	height: 352px;
+}
+
+.item-summary-detail {
+	height: 310px;
+	padding: 10px 30px;
+}
+
+.s-detail textarea,
+.item-summary-detail input:not([class="s-radio-l"]) {
+	height: 30px;
+	width: 100%;
+	padding-left: 10px;
+	border: none;
+	border-bottom: 1px solid #aaa; 
+}
+
+.item-summary-detail label:not([class="s-radio-l"]) {
+	padding-left: 10px;
+}
+
+.s-price {
+	float: left;
+	width: 30%;
+	border-right: 1px solid #aaa;
+}
+
+.s-people {
+	float: left;
+	width: 70%;
+}
+
+.s-detail textarea {
+	height: 120px;
+}
+
+.s-radio {
+	margin-top: 10px;
+}
+
+.s-radio-l {
+	margin-right: 10px;
+}
+
+.s-radio button {
+	float: right;
+}
+
+/*container-4*/
+.container-4 {
+	height: 360px;
+}
+
+.container-4 > div {
+	height: inherit;
+	background-color: #fff;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+}
+
+/*日历*/
+.calender {
+	float: left;
+	width: 350px;
+}
+
+.calender-detail {
+	height: 320px;
+	padding: 10px 30px 20px;
+}
+
+.date-select {
+	width: 100%;
+	height: 30px;
+	border-bottom: 1px solid #2189bf;
+}
+
+.date-select select:nth-child(2),
+.date-select select:nth-child(3) {
+	width: 80px;
+}
+
+.date-select select:nth-child(2) {
+	padding: 0 20px;
+}
+
+.date-select > a {
+	display: inline-block;
+	width: 58px;
+	text-align: center;
+	border: 1px solid #aaa;
+}
+
+.calender-table {
+	width: 100%;
+	height: 260px;
+	table-layout: fixed;
+	border-spacing: 0;
+	text-align: center;
+}
+
+.week th {
+	border-bottom: 1px solid #aaa;
+}
+
+.calender-table td {
+	cursor: pointer;
+	border: 1px solid #fff;
+}
+
+td.checked,
+.calender-table td:hover {
+	border-color: #e2cd46;
+}
+
+.jr,
+.wke {
+	color: #cf4a36;
+}
+
+/*汽车行业品牌榜*/
+.car-brand {
+	float: right;
+	width: 530px;
+}
+
+.brand-ranklist {
+	height: 320px;
+	padding: 10px 30px 20px;
+}
+
+.ranklist {
+	width: 100%;
+	height: 290px;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+.ranklist th,
+.ranklist td {
+	min-width: 60px;
+	border: 1px solid #aaa;
+	cursor: pointer;
+}
+
+.ranklist tr:hover {
+	background-color: #f3f5f6;
+}
+
+.bar {
+	display: inline-block;
+	width: 160px;
+	height: 4px;
+	margin-left: 10px;
+	background-color: #dcdcdc;
+}
+
+[class*="hot-"] {
+	display: block;
+	height: inherit;
+	background-color: #7fcbf0;
+}
+
+.hot-1 {
+	width: 80%;
+	background-color: #ed6e52;
+}
+
+.hot-2 {
+	width: 70%;
+	background-color: #ef8050;
+}
+
+.hot-3 {
+	width: 65%;
+	background-color: #f19f4f;
+}
+
+.hot-4 {
+	width: 55%;
+}
+
+.hot-5 {
+	width: 50%
+}
+
+.hot-6 {
+	width: 45%;
+}
+
+.hot-7 {
+	width: 40%;
+}
+
+.hot-8 {
+	width: 35%;
+}
+
+.hot-9 {
+	width: 32%;
+}
+
+.hot-10 {
+	width: 28%;
+}
